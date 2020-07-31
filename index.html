@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Goriber Bank</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+</head>
+<body>
+    <div id="login-section">
+        <h1 class="text-center">Welcome to Goriber bank</h1>
+        <div class="submit-aria">
+          <label>Email address</label>
+          <input type="email" class="form-control">
+          <br>
+          <label>Password</label>
+          <input type="password" class="form-control" >
+          <br>
+          <button type="submit" id="login" class="btn btn-success ">Login</button>
+        </div>
+    </div> 
+    <div id="transection-area">
+        <div class="row">
+            <div class="col-md-4 ">
+                <div class="diposite status">
+                    <h5>Diposite</h5>
+                    <h2>$00</h2>
+                </div>
+            </div>
+            <div class="col-md-4 ">
+                <div class="withdraw status">
+                    <h5>Withdraw</h5>
+                    <h2>$00</h2>
+                </div>
+            </div>
+            <div class="col-md-4 ">
+                <div class="balance status">
+                    <h5>Blanace</h5>
+                    <h2>$1240</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        const loginBtn = document.getElementById("login");
+        loginBtn.addEventListener("click", function(){
+            const loginSection = document.getElementById("login-section");
+            loginSection.style.display = "none";
+            const transectionArea = document.getElementById("transection-area");
+            transectionArea.style.display = "block";
+        })
+    </script> 
+</body>
+</html>
